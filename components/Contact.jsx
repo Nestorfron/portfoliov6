@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://portfoliov6.vercel.app/form"></input>
+                <input type="hidden" name="_next" value="https://portfoliov6.vercel.app/thanks"></input>
             </form>
                      </div>
                  </div>
