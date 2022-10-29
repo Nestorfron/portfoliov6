@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
 
 
@@ -122,20 +121,14 @@ const Navbar = () => {
                             </Link>
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase -tracking-widest text-[#5651e5]'>Let´s Connect</p>
-                            <div className='flex items-center  justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <FaLinkedinIn /> 
+                            <p className='uppercase -tracking-widest text-[#4791C2]'>Let´s Connect</p>
+                            <div className='flex items-center  justify-center my-4 w-full sm:w-[80%]'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ml-10 hover:scale-105 ease-in duration-500'>
+                                    <a href="https://www.linkedin.com/in/nestor-frones/"><FaLinkedinIn/></a> 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <FaGithub /> 
-                                </div>   
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <AiOutlineMail /> 
-                                </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                                    <BsFillPersonLinesFill /> 
-                                </div>                            
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ml-10 hover:scale-105 ease-in duration-500'>
+                                    <a href="https://github.com/Nestorfron"><FaGithub /></a>
+                                </div>                             
                             </div>
                         </div>
                     </div>
