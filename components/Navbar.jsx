@@ -18,10 +18,16 @@ const Navbar = () => {
 
     useEffect(()=>{
         if (
-            router.asPath === '/property' ||
-            router.asPath === '/crypto' ||
-            router.asPath === '/netflix' ||
-            router.asPath === '/twitch' 
+            router.asPath === '/bootstrap' ||
+            router.asPath === '/calculator' ||
+            router.asPath === '/flexbox' ||
+            router.asPath === '/form' ||
+            router.asPath === '/player' ||
+            router.asPath === '/web' ||
+            router.asPath === '/imgfinder' ||
+            router.asPath === '/cart'
+
+
 
         ) {
             setNavBg('transparent');
@@ -51,9 +57,7 @@ const Navbar = () => {
     return (
         <div style={{backgroundColor: `${navBg}` }} className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Link href='/'>
-                    <Image src="/assets/logo.png" alt="/" width='75' height='50'/>
-                </Link>
+                <h6 className='ml-0  uppercase text-[#4791C2]'>Welcome nice to meet you</h6>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
                         <Link href='/'>
