@@ -24,7 +24,8 @@ const Navbar = () => {
             router.asPath === '/player' ||
             router.asPath === '/web' ||
             router.asPath === '/imgfinder' ||
-            router.asPath === '/cart'
+            router.asPath === '/cart' 
+
 
 
 

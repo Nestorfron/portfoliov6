@@ -4,7 +4,7 @@ import Img4 from '../public/assets/projects/4.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const twitch = () => {
+const form = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -79,4 +79,4 @@ const twitch = () => {
   );
 };
 
-export default twitch;
+export default form;

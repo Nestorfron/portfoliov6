@@ -37,30 +37,32 @@ const Contact = () => {
 </div>
     <div className='col-span-3 w-full h-auto shadow-xl stroke-gray-400 rounded-xl lg:p-4'>
         <div className='p-4'>
-            <form>
+            <form action="https://formsubmit.co/nestorfrones07@gmail.com" method="POST" >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                     <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" required/>
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" required name='Name'/>
                     </div>
                     <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Phone Number</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" required/>
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" required name='Phone Number'/>
                     </div>
                 </div>
                 <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>Email</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" required/>
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" required name='Email'/>
                 </div>
                 <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>Subjet</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name='Subjet'/>
                 </div>
                 <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>Message</label>
-                    <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
+                    <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10' name='Text area'></textarea>
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://portfoliov6.vercel.app/form"></input>
             </form>
                      </div>
                  </div>
